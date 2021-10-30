@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+  </style>
+</head>
+<body>
+  <main>
+    <div class="con-1">
+      <img class="logo" src="./images/logo.svg" alt="logo icon" />
+      <div class="upload-choices">
+        <div id="document" class="upload-blocks">
+          <img class="document-svg" src="./images/icon-document.svg" alt="document icon" />
+        </div>
+        <div id="folder" class="upload-blocks">
+          <img class="folder-svg" src="./images/icon-folder.svg" alt="folder icon" />
+        </div>
+        <div id="upload" class="upload-blocks">
+          <img class="upload-svg" src="./images/icon-upload.svg" alt="upload icon" />
+        </div>
+      </div>
+    </div>
+    <div class="con-2">
+      <p class="uesed">
+        You’ve used <strong>815 GB</strong> of your storage
+      </p>
+      <input
+        class="range" 
+        type="range" 
+        min="0"
+        max="1000"
+        value="815"
+      />
+      <strong class="zero">0 GB</strong>
+      <strong class="thousend">1000 GB</strong>
+      <div class="usage">
+        <p class="left"><strong class="gb">185</strong> GB left</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
